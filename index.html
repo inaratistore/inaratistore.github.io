@@ -1561,6 +1561,12 @@
 
     let cart = [];
 
+    checkoutButton.addEventListener("click", () => {
+  if (cart.length > 0) {
+    window.location.href = "panier.html";
+  }
+});
+
     function formatPrice(amount) {
       return `${amount.toLocaleString("fr-DZ")} DA`;
     }
